@@ -1,3 +1,4 @@
+
 //
 //  WidgetKitContent.swift
 //  WidgetKitContent
@@ -55,6 +56,7 @@ struct WidgetKitContent: Widget {
         IntentConfiguration(kind: kind, intent: ConfigurationIntent.self, provider: Provider()) { entry in
             WidgetKitContentEntryView(entry: entry)
         }
+        .supportedFamilies([.systemSmall,.systemMedium,.systemLarge])
         .configurationDisplayName("My Widget")
         .description("This is an example widget.")
     }
